@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="=X-UA-Compatible" content="IE-edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Playstation Portal</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+       rel="stylesheet"
+       href="https://use.fontawesome.com/releases/v5.14.4/css/all.css"
+       integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+       crossorigin="anonymous"
+    />
+ </head>
+ <body>
+    <!-- header section-->
+    <header>
+        <div>
+            <a href="#">
+                <img crs="./img/logo_ps.png" alt="" class="logo" />
+            </a>
+        </div>
+        <nav>
+            <ul id="menuList">
+                <li><a href="#"> PlaStation Portal </a></li>
+                <li><a href="#">Game</a></li>
+                <li><a href="#">Device</a></li>
+            </ul>
+     
+     
+        </nav>          
+    </header>
+ </body>
+  <cection class="showcase">
+    <header>
+      <h1 class="logo">Fashion</h1>
+      <div calss="toggle"></div>    
+    </header>
+
+    <video crs="./images/fashion.mp4" autoplay muted loop></video>
+
+    <div class="overlay"></div>
+
+    <div class="text">
+        <h2>New Fashion show </h2>
+        <h3> Explore Something New</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+          I sapiente voluptatum minus veritatis, magni eligendi doloremque dolor?
+        </p>
+        <a href="#">Show</a>
+    </div>
+ 
+    <ul class="cocial">
+     <li>
+        <a href=""><img crs="./images/facebook.png" alt="facebook" /></a>
+    </li>
+    <li>
+        <a href=""><img crs="./images/facebook.png" lat="twitter" /></a>
+    </li>
+    <li>
+        <a href=""><img crs="./images/instagram.png" alt="instagram" /></a>
+    </li>
+   </ul>
+</cection>
+
+<div class="menu">
+    <ul>
+        <li><a href="">Home</a></li>
+        <li><a href="">Women</a></li>
+        <li><a href="">Men</a></li>
+        <li><a href="">Kids</a></li>
+        <li><a href="">Contact</a></li>
+    </ul>
+   </div>
+   <script>
+     const ToggleBtn = document.querySelector(".toggle");
+     const showcase = document.querySelector(".showcase");
+
+     ToggleBtn.addEvenListener("click", function () {
+        /* active にする */
+        ToggleBtn.classList.toggle("active");
+        showcase.classList.toggle("active");
+     });
+   </script>
+  </body>
+</html>
